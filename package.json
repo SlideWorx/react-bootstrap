@@ -8,7 +8,7 @@
   },
   "homepage": "http://react-bootstrap.github.io/",
   "scripts": {
-    "preinstall": "npm run build",
+    "postinstall": "npm run build",
     "build": "babel-node tools/build-cli.js",
     "test-watch": "karma start",
     "test-coverage": "COVERAGE=true karma start --single-run",
